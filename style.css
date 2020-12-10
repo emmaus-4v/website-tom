@@ -3,7 +3,7 @@
 html, body {
     height: 100%;
     padding: 0;
-    background-color: #EEEEEE;  
+    background-color: #EEE;  
     
     color: #303030;
     font: Verdana, Arial, Sans-Serif;
@@ -12,19 +12,21 @@ html, body {
 
 main {
     margin: 0 auto;
-    width: 700px;
+    width: 900px;
     position: relative;
 }
 
 
 article {
-    text-align: justify;
+    text-align: left;
+    float: left;
+    width: 900px;
 }
 
 
 header {
-    color: skyblue;
-    text-align: center;
+    color: red;
+    text-align: left;
 }
 
 
@@ -34,12 +36,24 @@ footer {
 }
 
 
-/* specifieke stijlen */
+/* afbeeldingen stijlen */
 
-img.zweefLinks {
-    float: left;
-    margin-right: 15px;
+img.zweefrechts {
+    float: right;
+    width: 320px;
+    height: 280px;
 }
+img.zweefLinks {
+    float: right;
+    width: 200px;
+}
+
+img.floatright{
+    float: left;
+    width: 200px;
+}
+
+/* specifieke stijlen */
 
 .smalltext {
     font-size: 0.7em;
@@ -51,7 +65,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: bold;
 }
 
 
@@ -70,20 +84,78 @@ nav ul li {
 
 nav li a {
     display: block;
-    color: white;
+    color: rgb(252, 247, 247);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 nav li a:hover {
-    background-color: #aaaaaa;
+    background-color: #6fb5ca;
 }
 
 nav li a.active {
-    background-color: skyblue;
+    background-color: rgb(85, 38, 214);
 }
 
+
+
+/* boxen pagina 1 */
+
+.div1 {
+    width: 500px;
+    height: 300px;
+    border: 10px solid red;
+    background-color: blue;
+}
+
+.div2 {
+    width: 890px;
+    height: 250px;
+    border: 10px solid red;
+}
+
+.div3 {
+    width: 900px;
+    height: 200px;
+    background-color: blue;
+}
+
+/* boxen pagina 5 */
+
+.div4 { 
+     width: 900px;
+     height: 220px;
+     border: 10px solid green
+}
+
+
+.div5{
+    width: 900px;
+    height: 200px;
+    background-color: solid red;
+}
+
+.div6{
+    width: 900px;
+    height: 200px;
+    background-color: green;
+}
+
+
+/* boxen pagina 4 */
+
+.div7{
+    width: 450px;
+    height: 400px;
+    float: left;
+}
+
+.div8{
+    width: 450px;
+    height: 400px;
+    float: right;
+}
 
 
 
